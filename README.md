@@ -20,7 +20,7 @@ const app = express();
 // sent the original webhook request, otherwise if even
 // a single byte is different the hash will be vastly different.
 // *However*, this turns req.body into a buffer - see comment below.
-app.use('/api/v1/patreon', bodyParser.raw({ type: 'application/json' })); // This must also be above
+app.use('/api/v1/patreon', bodyParser.raw({ type: 'application/json' })); // This must also be above defining routes or parsing with json etc.
 app.use(bodyParser.json());
 
 app.post('/api/v1/patreon', async (req, res) => {
