@@ -1,0 +1,19 @@
+{
+  "name": "patreon-webhook-signature",
+  "version": "1.2.3",
+  "description": "Simple way to verify webhook requests from Patreon using your webhook secret",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "patreon",
+    "webhook",
+    "signature",
+    "hash",
+    "secret",
+    "key"
+  ],
+  "author": "DieselJS <hello@dieseljs.com>",
+  "license": "ISC"
+}
